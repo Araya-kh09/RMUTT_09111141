@@ -13,12 +13,15 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      gap: 40px;
     }
     .left {
       width: 30%;
+      min-width: 200px;
     }
     .right {
-      width: 65%;
+      width: 50%;
+      max-width: 700px;
     }
     h1 {
       color: #0044cc;
@@ -28,7 +31,8 @@
       margin-top: 5px;
     }
     img {
-      width: 250px;
+      width: 100%;
+      max-width: 220px;
       margin: 20px 0;
     }
     table {
@@ -71,14 +75,13 @@
     <div class="left">
       <h1>RMUTT_09111141</h1>
       <p>Official Repository for RMUTT 09111141:<br>Calculus for Engineers 1</p>
+      <img src="cal.png" alt="Calculus image">
     </div>
 
     <div class="right">
       <h2>RMUTT 09111141</h2>
-      <p><strong>Official Repository for RMUTT 09111141:</strong> รายวิชา Calculus for Engineers 1</p>
+      <p><strong>Official Repository for RMUTT 09111141:</strong> Calculus for Engineers 1</p>
       <p><strong>Lecturer:</strong> Araya Kheawborisut, Ph.D.</p>
-
-      <img src="cal.png" alt="Calculus">
 
       <h3>คำอธิบายรายวิชา</h3>
       <p>
@@ -101,6 +104,37 @@
         </tr>
       </table>
       <p>สอบกลางภาค: TBA<br>สอบปลายภาค: TBA</p>
+
+      <h3>เอกสารประกอบการสอน</h3>
+      <table>
+        <tr>
+          <th>#</th><th>Title</th><th>Description</th><th>Material</th>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>ความรู้เบื้องต้น - Things You Need to Know</td>
+          <td>ประวัติและพัฒนาการของ TeX/LaTeX โครงสร้างพื้นฐานของเอกสาร หลักการและความเข้าใจเบื้องต้นในการจัดเตรียมเอกสารด้วย LaTeX</td>
+          <td><a href="#">Tutorial</a> <a href="#">Slide 1</a> <a href="#">Slide 2</a></td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>การเรียงพิมพ์อักษร - Typesetting Text</td>
+          <td>คำสั่ง การจัดเนื้อหา การจัด Environment, รายการ, ตาราง, รูปภาพ ฯลฯ</td>
+          <td><a href="#">Tutorial</a> <a href="#">Slide 3</a> <a href="#">Slide 4</a></td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>การเรียงพิมพ์อักษรทางคณิตศาสตร์</td>
+          <td>สูตรคณิตศาสตร์ที่น่าสนใจ และการใช้สัญลักษณ์ต่าง ๆ</td>
+          <td><a href="#">Tutorial</a> <a href="#">Slide 5</a> <a href="#">Slide 6</a></td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>หัวข้อพิเศษของเอกสาร</td>
+          <td>การกำหนดรหัส การสร้างบทสรุป การใช้คำอธิบายเพิ่มเติมในเอกสาร</td>
+          <td><a href="#">Tutorial</a> <a href="#">Slide 7</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
