@@ -7,15 +7,19 @@
     body {
       font-family: sans-serif;
       margin: 40px;
+      margin-left: 260px; /* เว้นที่ให้รูปด้านซ้าย */
       line-height: 1.6;
       background-color: #fdfdfd;
     }
     h1 {
       color: #0044cc;
     }
-    img {
-      width: 250px;
-      margin-top: 20px;
+    .fixed-left-img {
+      position: fixed;
+      top: 80px;
+      left: 20px;
+      width: 220px;
+      z-index: 100;
     }
     table {
       border-collapse: collapse;
@@ -44,10 +48,11 @@
 </head>
 <body>
 
+  <!-- รูปอยู่ด้านซ้ายแบบค้าง -->
+  <img src="cal.png" alt="Calculus Illustration" class="fixed-left-img">
+
   <h1>RMUTT_09111141</h1>
   <h2>Calculus for Engineers 1</h2>
-
-  <img src="cal.png" alt="Calculus Illustration">
 
   <h3>คำอธิบายรายวิชา</h3>
   <p>
