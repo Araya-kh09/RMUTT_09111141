@@ -3,234 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RMUTT_09111141</title>
-    <!-- Load Tailwind CSS from CDN -->
+    <title>แคลคูลัสสำหรับวิศวกร 1 | 09-111-141</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Customizing Tailwind's default theme to include 'Inter' font -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'], // Use Inter as the default sans-serif font
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Link to Google Fonts for 'Inter' -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom styles for the fixed left image */
-        .fixed-left-img {
-            position: fixed;
-            top: 20px; /* Adjust top position as needed */
-            left: 20px; /* Adjust left position as needed */
-            width: 220px; /* Fixed width for the image */
-            height: auto; /* Maintain aspect ratio */
-            z-index: 100;
-            border-radius: 0.5rem; /* Rounded corners for the image */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
-        }
-
-        /* Adjust body margin for the fixed left image on larger screens */
-        @media (min-width: 768px) { /* Apply on medium screens and up */
-            body {
-                margin-left: 260px; /* Space for the fixed image + padding */
-            }
-        }
-        /* Ensure the main content div handles its own margin on smaller screens */
-        @media (max-width: 767px) {
-            .main-content-wrapper {
-                margin-left: 0; /* No fixed margin on small screens */
-            }
-            .fixed-left-img {
-                position: static; /* Make image static on small screens */
-                width: 100%; /* Full width */
-                margin-bottom: 20px; /* Space below image */
-                box-shadow: none; /* No shadow */
-                border-radius: 0;
-            }
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Sarabun', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
     </style>
 </head>
-<body class="font-sans bg-gray-100 text-gray-800 antialiased p-4 sm:p-6 md:p-8">
-
-    <!-- Fixed Left Image (visible on larger screens, static on small) -->
-    <!-- The image source is updated to the uploaded image. -->
-    <img src="image_d2cb17.jpg" alt="Calculus Illustration" class="fixed-left-img">
-
-    <!-- Main content wrapper to handle margin for two-column layout -->
-    <div class="main-content-wrapper max-w-4xl mx-auto md:mx-0 bg-white rounded-xl shadow-lg overflow-hidden">
-
-        <!-- Main Content Area -->
-        <div class="p-6 sm:p-8 md:p-10 lg:p-12">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-800 text-center mb-4 leading-tight">RMUTT_09111141</h1>
-            <h2 class="text-2xl sm:text-3xl font-semibold text-blue-700 text-center mb-8 pb-4 border-b-2 border-blue-100">Calculus for Engineers 1</h2>
-
-            <!-- Course Description Section -->
-            <div class="mb-10">
-                <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mb-4 border-l-4 border-blue-500 pl-3">คำอธิบายรายวิชา</h3>
-                <p class="text-gray-700 leading-relaxed">
-                    ศึกษาแคลคูลัสขั้นพื้นฐาน เช่น <strong class="font-semibold text-blue-600">ลิมิต</strong>, <strong class="font-semibold text-blue-600">อนุพันธ์</strong>, <strong class="font-semibold text-blue-600">ปริพันธ์</strong> และการประยุกต์ในวิศวกรรม โดยใช้เทคนิคการสอนที่เน้นความเข้าใจและการแก้โจทย์ปัญหา
-                </p>
-            </div>
-
-            <!-- Class Schedule Section -->
-            <div class="mb-10">
-                <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mb-4 border-l-4 border-blue-500 pl-3">กำหนดการในชั้นเรียน</h3>
-                <p class="text-gray-700 leading-relaxed mb-6">
-                    เรียนทฤษฎีและปฏิบัติการที่ <strong class="font-semibold text-blue-600">ห้อง ST1905 คณะวิทยาศาสตร์และเทคโนโลยี</strong> / เรียนออนไลน์ผ่านระบบ <strong class="font-semibold text-blue-600">MS-Teams</strong> หรือเป็นไปตามประกาศของมหาวิทยาลัย
-                </p>
-                <div class="overflow-x-auto rounded-lg shadow-md">
-                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
-                        <thead class="bg-blue-100">
-                            <tr>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tl-lg">Section</th>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">Date</th>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">Lecture</th>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">Workshop</th>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tr-lg">MS-Teams</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-200">
-                            <tr class="hover:bg-blue-50 transition-colors duration-200">
-                                <td class="py-3 px-4 text-sm text-gray-700">01</td>
-                                <td class="py-3 px-4 text-sm text-gray-700">TUE</td>
-                                <td class="py-3 px-4 text-sm text-gray-700">08.00 - 10.00</td>
-                                <td class="py-3 px-4 text-sm text-gray-700">10.00 - 12.00</td>
-                                <td class="py-3 px-4 text-sm text-blue-600 font-medium">2erf37d</td>
-                            </tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200">
-                                <td class="py-3 px-4 text-sm text-gray-700">02</td>
-                                <td class="py-3 px-4 text-sm text-gray-700">THU</td>
-                                <td class="py-3 px-4 text-sm text-gray-700">08.00 - 10.00</td>
-                                <td class="py-3 px-4 text-sm text-gray-700">10.00 - 12.00</td>
-                                <td class="py-3 px-4 text-sm text-blue-600 font-medium">v1ih44v</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="text-gray-700 mt-6">
-                    <strong class="font-semibold text-blue-600">สอบกลางภาค:</strong> TBA<br>
-                    <strong class="font-semibold text-blue-600">สอบปลายภาค:</strong> TBA
-                </p>
-            </div>
-
-            <!-- Teaching Materials Section -->
-            <div class="mb-10">
-                <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mb-4 border-l-4 border-blue-500 pl-3">เอกสารประกอบการสอน</h3>
-                <div class="overflow-x-auto rounded-lg shadow-md">
-                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
-                        <thead class="bg-blue-100">
-                            <tr>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tl-lg">#</th>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">Title</th>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">Description</th>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tr-lg">Material</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-200">
-                            <tr class="hover:bg-blue-50 transition-colors duration-200">
-                                <td class="py-3 px-4 text-sm text-gray-700">01</td>
-                                <td class="py-3 px-4 text-sm text-gray-700 font-medium">ความรู้เบื้องต้น - Things You Need to Know</td>
-                                <td class="py-3 px-4 text-sm text-gray-700 text-left">ประวัติและพัฒนาการของ TeX/LaTeX โครงสร้างพื้นฐานของเอกสาร หลักการและความเข้าใจเบื้องต้นในการจัดเตรียมเอกสารด้วย LaTeX</td>
-                                <td class="py-3 px-4 text-sm">
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline mr-2">Tutorial</a>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline mr-2">Slide 1</a>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Slide 2</a>
-                                </td>
-                            </tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200">
-                                <td class="py-3 px-4 text-sm text-gray-700">02</td>
-                                <td class="py-3 px-4 text-sm text-gray-700 font-medium">การเรียงพิมพ์อักษร - Typesetting Text</td>
-                                <td class="py-3 px-4 text-sm text-gray-700 text-left">คำสั่ง การจัดเนื้อหา การจัด Environment, รายการ, ตาราง, รูปภาพ ฯลฯ</td>
-                                <td class="py-3 px-4 text-sm">
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline mr-2">Tutorial</a>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline mr-2">Slide 3</a>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Slide 4</a>
-                                </td>
-                            </tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200">
-                                <td class="py-3 px-4 text-sm text-gray-700">03</td>
-                                <td class="py-3 px-4 text-sm text-gray-700 font-medium">การเรียงพิมพ์อักษรทางคณิตศาสตร์</td>
-                                <td class="py-3 px-4 text-sm text-gray-700 text-left">สูตรคณิตศาสตร์ที่น่าสนใจ และการใช้สัญลักษณ์ต่าง ๆ</td>
-                                <td class="py-3 px-4 text-sm">
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline mr-2">Tutorial</a>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline mr-2">Slide 5</a>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Slide 6</a>
-                                </td>
-                            </tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200">
-                                <td class="py-3 px-4 text-sm text-gray-700">04</td>
-                                <td class="py-3 px-4 text-sm text-gray-700 font-medium">หัวข้อพิเศษของเอกสาร</td>
-                                <td class="py-3 px-4 text-sm text-gray-700 text-left">การกำหนดรหัส การสร้างบทสรุป การใช้คำอธิบายเพิ่มเติมในเอกสาร</td>
-                                <td class="py-3 px-4 text-sm">
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline mr-2">Tutorial</a>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Slide 7</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Grading Section -->
-            <div class="mb-10">
-                <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mb-4 border-l-4 border-blue-500 pl-3">การวัดผลการเรียน</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">คะแนนเต็ม <strong class="font-semibold text-blue-600">100 คะแนน</strong> โดยแบ่งออกเป็น:</p>
-                <ul class="list-disc list-inside text-gray-700 mb-6">
-                    <li><strong class="font-semibold text-blue-600">สอบกลางภาค</strong> 25%</li>
-                    <li><strong class="font-semibold text-blue-600">สอบปลายภาค</strong> 25%</li>
-                    <li><strong class="font-semibold text-blue-600">งานที่ได้รับมอบหมาย</strong> 25%</li>
-                    <li><strong class="font-semibold text-blue-600">โครงงาน</strong> 25%</li>
-                </ul>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    หากนักศึกษาเข้าชั้นเรียนน้อยกว่า <strong class="font-semibold text-blue-600">80%</strong> หรือคะแนนรวมต่ำกว่า <strong class="font-semibold text-blue-600">50%</strong> จะถือว่าไม่ผ่าน <br>
-                    สำหรับผู้ที่ผ่านเกณฑ์ จะคำนวณ t-score ดังนี้:
-                </p>
-
-                <!-- Code block for t-score formula -->
-                <pre class="bg-gray-100 p-4 rounded-lg font-mono text-gray-800 text-sm overflow-x-auto mb-6 shadow-sm"><code>t-score = 50 + 10*(x - u)/s</code></pre>
-
-                <div class="overflow-x-auto rounded-lg shadow-md">
-                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
-                        <thead class="bg-blue-100">
-                            <tr>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tl-lg">ผลการเรียน</th>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">เกรด</th>
-                                <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tr-lg">เกณฑ์ t-score</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-200">
-                            <tr class="hover:bg-blue-50 transition-colors duration-200"><td class="py-3 px-4 text-sm text-gray-700">F</td><td class="py-3 px-4 text-sm text-gray-700">0.00</td><td class="py-3 px-4 text-sm text-gray-700">(-Inf, 50)</td></tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200"><td class="py-3 px-4 text-sm text-gray-700">D</td><td class="py-3 px-4 text-sm text-gray-700">1.00</td><td class="py-3 px-4 text-sm text-gray-700">[50, 55)</td></tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200"><td class="py-3 px-4 text-sm text-gray-700">D+</td><td class="py-3 px-4 text-sm text-gray-700">1.50</td><td class="py-3 px-4 text-sm text-gray-700">[55, 60)</td></tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200"><td class="py-3 px-4 text-sm text-gray-700">C</td><td class="py-3 px-4 text-sm text-gray-700">2.00</td><td class="py-3 px-4 text-sm text-gray-700">[60, 65)</td></tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200"><td class="py-3 px-4 text-sm text-gray-700">C+</td><td class="py-3 px-4 text-sm text-gray-700">2.50</td><td class="py-3 px-4 text-sm text-gray-700">[65, 70)</td></tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200"><td class="py-3 px-4 text-sm text-gray-700">B</td><td class="py-3 px-4 text-sm text-gray-700">3.00</td><td class="py-3 px-4 text-sm text-gray-700">[70, 75)</td></tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200"><td class="py-3 px-4 text-sm text-gray-700">B+</td><td class="py-3 px-4 text-sm text-gray-700">3.50</td><td class="py-3 px-4 text-sm text-gray-700">[75, 80)</td></tr>
-                            <tr class="hover:bg-blue-50 transition-colors duration-200"><td class="py-3 px-4 text-sm text-gray-700">A</td><td class="py-3 px-4 text-sm text-gray-700">4.00</td><td class="py-3 px-4 text-sm text-gray-700">[80, ∞)</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- References Section -->
-            <div class="mb-10">
-                <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mb-4 border-l-4 border-blue-500 pl-3">เอกสารอ้างอิง</h3>
-                <ol class="list-decimal list-inside text-gray-700">
-                    <li class="mb-2">Frank Mittelbach et al. The LaTeX Companion. Addison-Wesley Professional, 2004.</li>
-                    <li class="mb-2">Leslie Lamport. LATEX: A Document Preparation System : User's Guide and Reference Manual. Addison-Wesley, 1994.</li>
-                </ol>
-            </div>
-
-            <!-- Footer Section -->
-            <div class="mt-10 pt-6 border-t border-gray-200 text-center text-gray-500 text-sm">
-                Hosted on GitHub Pages by Araya-kh09
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-2">แคลคูลัสสำหรับวิศวกร 1</h1>
+                <p class="text-xl opacity-90">Calculus for Engineers 1</p>
+                <p class="text-lg mt-2 opacity-80">รหัสวิชา: 09-111-141</p>
             </div>
         </div>
-    </div>
+    </header>
 
-</body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-8 py-4">
+                <button onclick="showSection('description')" class="nav-btn px-4 py-2 rounded-lg font-medium transition-colors hover:bg-blue-100 hover:text-blue-600" data-section="description">คำอธิบายรายวิชา</button>
+                <button onclick="showSection('schedule')" class="nav-btn px-4 py-2 rounded-lg font-medium transition-colors hover:bg-blue-100 hover:text-blue-600" data-section="schedule">กำหนดการเรียน</button>
+                <button onclick="showSection('materials')" class="nav-btn px-4 py-2 rounded-lg font-medium transition-colors hover:bg-blue-100 hover:text-blue-600" data-section="materials">เอกสารประกอบ</button>
+                <button onclick="showSection('evaluation')" class="nav-btn px-4 py-2 rounded-lg font-medium transition-colors hover:bg-blue-100 hover:text-blue-600" data-section="evaluation">การประเมินผล</button>
+                <button onclick="showSection('references')" class="nav-btn px-4 py-2 rounded-lg font-medium transition-colors hover:bg-blue-100 hover:text-blue-600" data-section="references">หนังสืออ้างอิง</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+        <!-- Course Description Section -->
+        <section id="description" class="content-section">
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">📚</span>
+                    คำอธิบายรายวิชา
+                </h2>
+                <div class="prose max-w-none text-gray-700 leading-relaxed">
+                    <p class="text-lg mb-6">วิชาแคลคูลัสสำหรับวิศวกร 1 เป็นวิชาพื้นฐานทางคณิตศาสตร์ที่สำคัญสำหรับนักศึกษาวิศวกรรมศาสตร์</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border-l-4 border-blue-400">
+                            <h3 class="font-semibold text-xl mb-4 text-blue-800 flex items-center">
+                                <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">📝</span>
+                                Midterm
+                            </h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start"><span class="text-blue-500 mr-3 font-bold">•</span>ฟังก์ชัน ลิมิตและความต่อเนื่อง</li>
+                                <li class="flex items-start"><span class="text-blue-500 mr-3 font-bold">•</span>การหาอนุพันธ์</li>
+                                <li class="flex items-start"><span class="text-blue-500 mr-3 font-bold">•</span>รูปแบบยังไม่กำหนด</li>
+                                <li class="flex items-start"><span class="text-blue-500 mr-3 font-bold">•</span>การประยุกต์ของอนุพันธ์</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg border-l-4 border-purple-400">
+                            <h3 class="font-semibold text-xl mb-4 text-purple-800 flex items-center">
+                                <span class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">📋</span>
+                                Final
+                            </h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start"><span class="text-purple-500 mr-3 font-bold">•</span>การหาปริพันธ์</li>
+                                <li class="flex items-start"><span class="text-purple-500 mr-3 font-bold">•</span>เทคนิคของการหาปริพันธ์</li>
+                                <li class="flex items-start"><span class="text-purple-500 mr-3 font-bold">•</span>การประยุกต์ของปริพันธ์จำกัดเขต</li>
+                                <li class="flex items-start"><span class="text-purple-500 mr-3 font-bold">•</span>พีชคณิตเวกเตอร์ในสามมิติ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="content-section hidden">
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <span class="bg-green-100 text-green-600 rounded-full p-3 mr-4">📅</span>
+                    กำหนดการในชั้นเรียน
+                </h2>
+                
+                <div class="mb-8 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border-l-4 border-yellow-400">
+                    <h3 class="font-semibold text-lg mb-3 text-orange-800">สถานที่เรียน</h3>
+                    <p class="text-gray-700">เรียนทฤษฎีและปฏิบัติการที่ <strong>ห้อง ST1905 คณะวิทยาศาสตร์และเทคโนโลยี</strong></p>
+                    <p class="text-gray-700 mt-2">หรือเรียนออนไลน์ผ่านระบบ MS-Teams ตามประกาศของมหาวิทยาลัย</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-white rounded-lg overflow-hidden shadow-sm">
+                        <thead class="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left font-semibold">SECTION</th>
+                                <th class="px-6 py-4 text-left font-semibold">วัน</th>
+                                <th class="px-6 py-4 text-left font-semibold">เวลา</th>
+                                <th class="px-6 py-4 text-left font-semibold">ห้อง</th>
+                                <th class="px-6 py-4 text-left font-semibold">MS-TEAMS</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-6 py-4 font-medium text-blue-600">01</td>
+                                <td class="px-6 py-4">อังคาร</td>
+                                <td class="px-6 py-4">08.00 - 10.00</td>
+                                <td class="px-6 py-4">รป01</td>
+                                <td class="px-6 py-4 font-mono text-sm bg-gray-100 rounded px-2 py-1">2erf37d</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-6 py-4 font-medium text-blue-600">02</td>
+                                <td class="px-6 py-4">พุธ</td>
+                                <td class="px-6 py-4">08.00 - 10.00</td>
+                                <td class="px-6 py-4">รป01</td>
+                                <td class="px-6 py-4 font-mono text-sm bg-gray-100 rounded px-2 py-1">v1ih44v</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-6 py-4 font-medium text-blue-600">03</td>
+                                <td class="px-6 py-4">พุธ</td>
+                                <td class="px-6 py-4">13.00 - 16.00</td>
+                                <td class="px-6 py-4">รป01</td>
+                                <td class="px-6 py-4 font-mono text-sm bg-gray-100 rounded px-2 py-1">v1ih4rt</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materials Section -->
+        <section id="materials" class="content-section hidden">
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <span class="bg-purple-100 text-purple-600 rounded-full p-3 mr-4">📖</span>
+                    เอกสารประกอบการสอน
+                </h2>
+                
+                <p class="text-lg text-gray-700 mb-6">เอกสารประกอบการสอนทั้งหมด 10 บท พร้อมให้ดาวน์โหลด</p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 1')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-blue-800">บทที่ 1</h3>
+                                <p class="text-sm text-blue-600">ฟังก์ชันและลิมิต</p>
+                            </div>
+                            <span class="text-blue-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 2')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-green-800">บทที่ 2</h3>
+                                <p class="text-sm text-green-600">ความต่อเนื่อง</p>
+                            </div>
+                            <span class="text-green-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 3')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-purple-800">บทที่ 3</h3>
+                                <p class="text-sm text-purple-600">การหาอนุพันธ์</p>
+                            </div>
+                            <span class="text-purple-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg border border-red-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 4')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-red-800">บทที่ 4</h3>
+                                <p class="text-sm text-red-600">รูปแบบยังไม่กำหนด</p>
+                            </div>
+                            <span class="text-red-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-lg border border-yellow-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 5')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-yellow-800">บทที่ 5</h3>
+                                <p class="text-sm text-yellow-600">การประยุกต์อนุพันธ์</p>
+                            </div>
+                            <span class="text-yellow-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-lg border border-indigo-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 6')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-indigo-800">บทที่ 6</h3>
+                                <p class="text-sm text-indigo-600">การหาปริพันธ์</p>
+                            </div>
+                            <span class="text-indigo-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-lg border border-pink-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 7')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-pink-800">บทที่ 7</h3>
+                                <p class="text-sm text-pink-600">เทคนิคการหาปริพันธ์</p>
+                            </div>
+                            <span class="text-pink-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-lg border border-teal-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 8')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-teal-800">บทที่ 8</h3>
+                                <p class="text-sm text-teal-600">การประยุกต์ปริพันธ์</p>
+                            </div>
+                            <span class="text-teal-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg border border-orange-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 9')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-orange-800">บทที่ 9</h3>
+                                <p class="text-sm text-orange-600">ปริพันธ์จำกัดเขต</p>
+                            </div>
+                            <span class="text-orange-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-lg border border-cyan-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 10')">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-cyan-800">บทที่ 10</h3>
+                                <p class="text-sm text-cyan-600">เวกเตอร์ 3 มิติ</p>
+                            </div>
+                            <span class="text-cyan-500 text-2xl">📄</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evaluation Section -->
+        <section id="evaluation" class="content-section hidden">
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <span class="bg-red-100 text-red-600 rounded-full p-3 mr-4">📊</span>
+                    การประเมินผล
+                </h2>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Evaluation Breakdown -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">สัดส่วนการประเมิน</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg border-l-4 border-blue-400">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium">จิตพิสัยและงานที่ได้รับมอบหมาย</span>
+                                    <span class="font-bold text-blue-600">20%</span>
+                                </div>
+                                <div class="mt-2 ml-4 space-y-1 text-sm text-gray-600">
+                                    <div class="flex justify-between">
+                                        <span>• งานรายบุคคล</span>
+                                        <span>10%</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>• มาเรียน</span>
+                                        <span>10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-lg border-l-4 border-green-400">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium">สอบกลางภาคเรียน</span>
+                                    <span class="font-bold text-green-600">40%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-4 rounded-lg border-l-4 border-purple-400">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium">สอบปลายภาคเรียน</span>
+                                    <span class="font-bold text-purple-600">40%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Rules and Regulations -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">กฎระเบียบสำคัญ</h3>
+                        <div class="space-y-4">
+                            <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                                <h4 class="font-semibold text-yellow-800 mb-2">⚠️ การเข้าเรียน</h4>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• มาสาย 2 ครั้ง = ขาดเรียน 1 ครั้ง</li>
+                                    <li>• ขาดเรียนเกิน 3 ครั้ง = ไม่มีสิทธิ์สอบ</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+                                <h4 class="font-semibold text-red-800 mb-2">🚫 การสอบ</h4>
+                                <p class="text-sm text-gray-700">นักศึกษาต้องเข้าสอบทั้งกลางภาคและปลายภาค<br>หากขาดสอบครั้งใดครั้งหนึ่งจะได้รับผลเรียน <strong>F</strong></p>
+                            </div>
+                            
+                            <div class="bg-blue-50 border border-blue-200 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-800 mb-2">📈 เกณฑ์การตัดเกรด</h4>
+                                <p class="text-sm text-gray-700">อิงเกณฑ์และอิงกลุ่ม<br>
+                                <span class="text-xs text-gray-500">หมายเหตุ: นักศึกษาจะสอบผ่านถ้า และนักศึกษาจะได้เกรด A ถ้า เมื่อ คือคะแนนที่ได้</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- References Section -->
+        <section id="references" class="content-section hidden">
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <span class="bg-orange-100 text-orange-600 rounded-full p-3 mr-4">📚</span>
+                    หนังสืออ้างอิง
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-200">
+                        <div class="flex items-start space-x-4">
+                            <span class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">1</span>
+                            <div>
+                                <h3 class="font-semibold text-lg text-blue-800">Anton, H. Calculus</h3>
+                                <p class="text-gray-600 mt-1">New York: John Wiley and Sons, Inc., 1995.</p>
+                                <div class="mt-3 flex items-center space-x-2">
+                                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">หนังสือหลัก</span>
+                                    <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">ภาษาอังกฤษ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg border border-green-200">
+                        <div class="flex items-start space-x-4">
+                            <span class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">2</span>
+                            <div>
+                                <h3 class="font-semibold text-lg text-green-800">George B. Thomas, Jr, Thomas'CALCULUS</h3>
+                                <p class="text-gray-600 mt-1">New York.: Addison-Wesley Publishing Company, 1965.</p>
+                                <div class="mt-3 flex items-center space-x-2">
+                                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">หนังสือประกอบ</span>
+                                    <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">ภาษาอังกฤษ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border-l-4 border-yellow-400">
+                    <h4 class="font-semibold text-orange-800 mb-2">💡 คำแนะนำ</h4>
+                    <p class="text-gray-700">หนังสือเหล่านี้เป็นแหล่งอ้างอิงที่สำคัญสำหรับการศึกษาแคลคูลัส นักศึกษาควรใช้ประกอบการเรียนและทำแบบฝึกหัดเพิ่มเติม</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg opacity-90">แคลคูลัสสำหรับวิศวกร 1 | รหัสวิชา 09-111-141</p>
+            <p class="mt-2 opacity-75">คณะวิทยาศาสตร์และเทคโนโลยี</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation functionality
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+            
+            // Update navigation buttons
+            const navButtons = document.querySelectorAll('.nav-btn');
+            navButtons.forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white');
+                btn.classList.add('text-gray-600');
+            });
+            
+            // Highlight active button
+            const activeBtn = document.querySelector(`[data-section="${sectionId}"]`);
+            activeBtn.classList.add('bg-blue-600', 'text-white');
+            activeBtn.classList.remove('text-gray-600');
+        }
+
+        // Download functionality (Demo)
+        function downloadFile(chapter) {
+            alert(`กำลังดาวน์โหลด ${chapter}\n\nหมายเหตุ: นี่เป็นเว็บไซต์ตัวอย่าง ไฟล์จริงจะต้องเชื่อมต่อกับระบบจัดการไฟล์`);
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('description');
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97dda53547628960',t:'MTc1NzY2MTY1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
