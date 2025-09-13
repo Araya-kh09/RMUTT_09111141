@@ -753,7 +753,14 @@
 
         // Download functionality (Demo)
         function downloadFile(chapter) {
-            alert(`กำลังดาวน์โหลด ${chapter}\n\nหมายเหตุ: นี่เป็นเว็บไซต์ตัวอย่าง ไฟล์จริงจะต้องเชื่อมต่อกับระบบจัดการไฟล์`);
+            const fileName = `${chapter}.pdf`;             // เช่น "บทที่ 2.pdf"
+            const encoded  = encodeURIComponent(fileName); // กันปัญหาชื่อไฟล์ภาษาไทย/มีช่องว่าง
+            const a = document.createElement('a');
+            a.href = encoded;                              // ถ้าไฟล์อยู่ใน root เดียวกับ index.html
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
         }
 
         // Initialize page
