@@ -177,7 +177,7 @@
                         </div>
                     </div>
                     
-                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200 card-hover cursor-pointer" onclick="downloadFile('บทที่ 2')">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200 card-hover cursor-pointer" onclick="downloadFile('chap2')">
                         <div class="flex items-center justify-between">
                             <div>
                                 <h3 class="font-semibold text-green-800">บทที่ 2</h3>
@@ -753,10 +753,9 @@
 
         // Download functionality (Demo)
         function downloadFile(chapter) {
-            const fileName = `${chapter}.pdf`;             // เช่น "บทที่ 2.pdf"
-            const encoded  = encodeURIComponent(fileName); // กันปัญหาชื่อไฟล์ภาษาไทย/มีช่องว่าง
+            const fileName = `${chapter}.pdf`;   // เช่น "chap2.pdf"
             const a = document.createElement('a');
-            a.href = encoded;                              // ถ้าไฟล์อยู่ใน root เดียวกับ index.html
+            a.href = fileName;                   // ถ้าไฟล์อยู่โฟลเดอร์เดียวกับ index.html
             a.download = fileName;
             document.body.appendChild(a);
             a.click();
